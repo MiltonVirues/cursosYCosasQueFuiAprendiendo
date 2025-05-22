@@ -1,0 +1,146 @@
+/*
+Grid:
+Grid propiedades:
+Contenedor:
+grid-template-rows
+fr funciona parecido al flex-grow
+
+grid-row-gap    |seria como un margin pero entre filas del contenedor del grid
+grid-column-gap |seria como un margin pero entre columnas del contenedor del grid
+grid-gap |seria la shortham property
+
+grid-row 
+grid-row-start 
+grid-row-end 
+
+grid-column
+grid-column-start 
+grid-column-end 
+
+span esto seria una manera de evitar calcular cuantoas, filas y columnas ocupariamos
+
+align vertical
+justify horizontal
+*/
+*{
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+background: radial-gradient(circle,#fff,#bbb);
+padding: 15px;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3,1fr);
+grid-auto-columns: 1fr;
+grid-auto-rows: 1fr;
+border: 3px solid #000;
+background-color: #333;
+grid-auto-flow: dense; /*rellena los campos vacios*/
+justify-content: space-around;
+align-content: space-between;
+height: 600px;
+align-items: center;
+justify-items: center;
+}
+.grid-item{
+  border: 2px solid #000;
+background-color: #999;
+font-size: 30px;
+padding: 50px;
+}
+.grid-item:first-child{
+background-color: #f00;
+order: 3; /*funciona como un Z-index  y su propiedad es similar ala de flex*/  
+}
+/*
+.grid-item:first-child{
+align-self:start;
+justify-self: start;
+
+background-color: #f00;
+}
+.grid-item:nth-child(2){
+
+}
+.grid-item:nth-child(3){
+align-self: flex-start;
+justify-self: end;
+background-color: #f00;
+}
+.grid-item:nth-child(4){
+order: 2;
+}
+.grid-item:nth-child(5){
+background-color: #0fe;
+}
+.grid-item:nth-child(6){
+
+}
+
+.grid-item:nth-child(7){
+align-self: flex-end;
+justify-self: start;
+background-color: #f00;
+}
+.grid-item:nth-child(8){
+
+}
+.grid-item:last-child{
+align-self: end;
+justify-self: end;
+background-color: #f00;
+}
+*/
+/*"first child" selecciona el primer elemento de una clase correspondiente
+.grid-item:first-child{
+background: #900;
+}
+
+seria la manera correcta de querer seleccionar a otro aparte del firstchild
+.grid-item:nth-child(2){ 
+  background: #ff0;
+}
+
+Repeat(cantidad,tamaño/s) seria una manera de abreviar la siguiente propiedad:
+"grid-template-columns: 150px 150px 150px;" 
+*/
+
+/*grid dinamico, son valores que usualmente se colocan en el repeat
+min-content hace que el grid tenga el valor del contenido minimo dentro del mismo
+max-content hace lo mismo pero en el caso de maximo tamaño del grid
+minmax(min,max) asigna los valores maximos y minimos de algo
+
+auto-fill genera columnas dependiendo el ancho de la pagina
+auto-fit se escala
+auto valor por defecto
+
+justify-items (center)   mantiene los items de manera centrada dentro de sus propias celdas del grid
+justify-items (start o flex-start)   lleva todos los items del grid hacia la izquierda de la pagina
+justify-items (end o flex-end)  lleva los items del grid hacia la derecha de la pagina 
+
+align items funciona igual a "justify-items" pero centra verticalmente 
+
+justify-content alinea pilas
+align-content alinea filas
+
+propiedades para alinear las columnas:
+space-around
+space-between
+space-evenly
+
+
+-content     modifica el grid total
+-item       modifica las columnas o filas del grid
+-self       modifica el contendi de las filas del grid
+
+place-self  es una shortham property de justify-self y align-self
+
+
+
+y finalmente
+order
+*/
+

@@ -1,0 +1,18 @@
+Apuntadores en C
+"Llamada a funciones por referencia"
+*/
+#include<stdio.h>
+int cubo(int n);
+int main()
+{
+int num=5;
+printf("valor Original: %i",num);
+cubo(&num);
+printf("Valor Nuevo: %i",num);
+return 0;
+}
+int cubo(int n)
+{
+return n*n*n;
+}
+//%p=Se utiliza para saber la ubicacion exadecimal de una variable

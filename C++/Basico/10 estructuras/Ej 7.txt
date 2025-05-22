@@ -1,0 +1,38 @@
+/* Defina uan estructura que indique el tiempo empleado por un ciclista en una etapa. 
+La estructura debe tener estos 3 campos: horas,minutos y segundos.
+Escriba un programa que dado n etapas calcule el tiempo total empleado en correr todas las etapas. */
+#include<iostream>
+#include<conio.h>
+using namespace std;
+struct etapas{
+	int horas,minutos,segundos;
+}e[100];
+int main(){
+int n_etapas,ht=0,mt=0,st=0;
+cout<<"Digite el numero de etapas: ";cin>>n_etapas;
+//Pidiendo los datos al usuario
+for(int i=0;i<n_etapas;i++){
+cout<<"Horas: ";cin>>e[i].horas;
+cout<<"Minutos: ";cin>>e[i].minutos;
+cout<<"Segundos: ";cin>>e[i].segundos;
+
+ht+=e[i].horas;
+mt+=e[i].minutos;
+st+=e[i].segundos;
+if(mt>=60){
+	mt-=60;
+	ht++;
+}
+if(st>=60){
+	st-=60;
+	mt++;
+}
+cout<<"Tiempo total empleado\n";
+cout<<"Horas: ",cin>>e[i].horas;
+cout<<"Minutos: ",cin>>e[i].minutos;
+cout<<"Segundos: ",cin>>e[i].segundos;
+
+getch();
+return 0;
+}
+}

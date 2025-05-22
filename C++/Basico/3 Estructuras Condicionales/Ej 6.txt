@@ -1,0 +1,17 @@
+/* Realize un programa que compruebe que el numero digitado por el usuario sea negativo o positivo */
+#include<iostream>
+using namespace std;
+int main(){
+	int numero;
+	cout<<"Digite un numero: ";cin>>numero;
+	if(numero<0){
+		cout<<"El numero es negativo";
+	}
+	else if(numero==0){
+		cout<<"El numero es cero";
+	}
+	else{
+	cout<<"El numero es positivo";
+	}
+	return 0;
+}

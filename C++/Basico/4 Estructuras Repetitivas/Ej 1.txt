@@ -1,0 +1,21 @@
+/* La sentencia while:
+
+while(Expresion Logica){
+conjunto de instrucciones;
+}
+*/
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main(){
+
+int i;
+
+i=1;
+while(i>=10){
+	cout<<i<<endl;
+	i++;// ++ crea un conteo progresivo y -- un conteo regresivo :)
+}
+getch();//Funciona,(por lo que entendi), para mantener un .exe abierto si no lo queremos abrir con el compilador C++
+return 0;
+}

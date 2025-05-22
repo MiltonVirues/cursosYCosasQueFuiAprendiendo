@@ -1,0 +1,12 @@
+/* Escriba un programa que lea las tres notas de un alumno y calcule la nota final media de dicho alumno */
+#include<iostream>
+using namespace std;
+int main (){
+float nota1,nota2,nota3,promedio=0;
+cout<<"Digite la primer, segunda y tercer nota del alumno: ";cin>>nota1>>nota2>>nota3;
+
+promedio = (nota1+nota2+nota3)/3;
+cout.precision(2);
+cout<<"El promedio del alumno es: "<<promedio;
+return 0;		
+}

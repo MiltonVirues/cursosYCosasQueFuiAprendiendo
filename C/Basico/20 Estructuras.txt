@@ -1,0 +1,18 @@
+/*
+estructuras En C
+*/
+#include<stdio.h>
+struct perro
+{
+char nombre[30];
+int edadMeses;
+float peso;	
+}perro1={"Messi",12,20.3};
+
+int main()
+{
+printf("El nombre de mi mascota es:%s\n",perro1.nombre);
+printf("La edad de mi mascota es: %i",perro1.edadMeses);
+printf("El peso de mi mascota es:%.2f \n",perro1.peso);
+return 0;
+}

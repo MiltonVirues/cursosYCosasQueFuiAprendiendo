@@ -1,0 +1,11 @@
+/*
+Ciclo for en C
+*/
+#include<stdio.h>
+int main(){
+	int contador;
+for(contador=1;contador<=10,contador++){//el ciclo for,(en este caso), como le asigne ala variable contador un 1 va ir aumentador de uno en uno hasta llegar al 10 por eso contador <=10.
+printf("%i\n",contador);		
+	}
+	return 0;//termina el programa
+}

@@ -1,0 +1,29 @@
+/*
+Arreglos De Estructuras en C
+*/
+#include<stdio.h>
+struct perro
+{
+	char nombre[30];
+	int edad;
+	float peso;
+}perros[3];
+int main()
+{
+for(int i=0;i<3;i++)
+{
+printf("%i Ingrese El nombre: ",i+1);
+scanf("%s",&perros[i].nombre);
+printf("%i Ingrese La edad: ",i+1);
+scanf("%i",&perros[i].edad);
+printf("%i Ingrese El Peso: ",i+1);
+scanf("%.2f",&perros[i].peso);
+}	
+for(int i=0;i<3;i++)
+{
+printf("%i El nombre es: ",i+1,perros[i].nombre);
+printf("%i La edad es: ",i+1,perros[i].edad);
+printf("%i El Peso es: ",i+1,perros[i].peso);
+}
+	return 0;
+}

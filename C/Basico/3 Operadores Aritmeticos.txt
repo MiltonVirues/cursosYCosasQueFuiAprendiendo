@@ -1,0 +1,121 @@
+#include<stdio.h>
+/* Suma
+int main()
+{
+int num1;
+int num2;
+int resultado;
+printf("\nIngrese El Primer Valor: ");
+scanf("%d",&num1);/*con scanf se guarda el valor
+scanf("%Tipo de dato",&Variable al almacenar); 
+&=Operador de direccion
+d=Enteros Decimales
+
+printf("\nIngrese El Segundo Valor: ");
+scanf("%d",&num2);
+resultado=num1+num2;
+printf("el Resultado De La Suma Es:%d\n",resultado);
+return 0;
+}
+*/
+/*
+Resta
+int main()
+{
+int num1;
+int num2;
+int resultado;
+printf("\nIngrese El Primer Valor: ");
+scanf("%d",&num1);/*con scanf se guarda el valor
+scanf("%Tipo de dato",&Variable al almacenar); 
+&=Operador de direccion
+d=Enteros Decimales
+
+printf("\nIngrese El Segundo Valor: ");
+scanf("%d",&num2);
+resultado=num1-num2;
+printf("el Resultado De La Suma Es:%d\n",resultado);
+return 0;
+}
+*/
+/*
+Multiplicacion
+int main()
+{
+int num1;
+int num2;
+int resultado;
+printf("\nIngrese El Primer Valor: ");
+scanf("%d",&num1);/*con scanf se guarda el valor
+scanf("%Tipo de dato",&Variable al almacenar); 
+&=Operador de direccion
+d=Enteros Decimales
+
+printf("\nIngrese El Segundo Valor: ");
+scanf("%d",&num2);
+resultado=num1*num2;
+printf("el Resultado De La Suma Es:%d\n",resultado);
+return 0;
+}
+*/
+/*
+Division
+int main()
+{
+int num1;
+int num2;
+int resultado;
+printf("\nIngrese El Primer Valor: ");
+scanf("%d",&num1);/*con scanf se guarda el valor
+scanf("%Tipo de dato",&Variable al almacenar); 
+&=Operador de direccion
+d=Enteros Decimales
+
+printf("\nIngrese El Segundo Valor: ");
+scanf("%d",&num2);
+resultado=num1/num2;
+printf("el Resultado De La Suma Es:%d\n",resultado);
+return 0;
+}
+*/
+
+//Multiplicacion con variables asignadas
+int main()
+{
+int num1;
+int a=12;
+int b=3;
+int num2;
+int resultado;
+printf("\nIngrese El Primer Valor: ");
+scanf("%d",&num1);/*con scanf se guarda el valor
+scanf("%Tipo de dato",&Variable al almacenar); 
+&=Operador de direccion
+d=Enteros Decimales
+*/
+printf("\nIngrese El Segundo Valor: ");
+scanf("%d",&num2);
+resultado=a*(num1+num2)+b*(b+num2);
+printf("el Resultado De La Suma Es:%d\n",resultado);
+return 0;
+}
+//Multiplicacion con variables asignadas
+int main()
+{
+int num1;
+int a=12;
+int b=3;
+int num2;
+int resultado;
+printf("\nIngrese El Primer Valor: ");
+scanf("%d",&num1);/*con scanf se guarda el valor
+scanf("%Tipo de dato",&Variable al almacenar); 
+&=Operador de direccion
+d=Enteros Decimales
+*/
+printf("\nIngrese El Segundo Valor: ");
+scanf("%d",&num2);
+resultado=a*b*num1+num2;
+printf("el Resultado De La Suma Es:%d\n",resultado);
+return 0;
+}

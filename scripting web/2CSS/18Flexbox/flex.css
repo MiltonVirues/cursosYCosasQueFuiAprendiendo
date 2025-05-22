@@ -1,0 +1,70 @@
+/*
+El flex funciona de la siguiente manera:
+se representa al "cross axis" como un eje y y empieza de arriba hacia abajo, siendo "cross-start" el inicio o arriba y "cross-end" siendo el fin o abajo
+algo parecido aplicaria para el "main axis" pero este seria representado como un eje z que empieza ala izquierda y termina ala derecha
+siendo "main-start" el comienzo o la izquierda y "main-end" el fin  o la derecha.
+propiedad: 
+flex direction:
+row valor por defecto main-axis
+row-reverse modifica la direccion de manera vertical main-axis
+flex-wrap:
+sirve para que cuando por ejemplo se va achicando la pagina con el cursor, el contenido del flex, en vez de modificar su ancho valla yendo una caja abajo ala vez mientras mas se acorta la resolucion de la pagina
+wrap-reverse hace lo mismo pero en vez de las cajas ir por abajo van por arriba.
+flex-flow:
+sirve para abreviar flex-direction y flex wrap
+
+(Main Axis)
+justify content:
+center centra el contenido
+space-around funciona como un "margin: auto"
+space-between da un margen perfecto de cada item cubriendo toda la pagina
+space-evenly da un margen especifico para que cada item tenga la misma separacion entre si
+Ejemplo: flex-flow: column-reverse wrap;
+column modifica la direccion de manera horizontal
+
+
+(Cross Axis)
+align-items  se una para cuando solo ay una linea de items que son flex-items
+align-content su uso es similar pero para mas de una linea 
+las propiedades son las mismas pero se utilizan en distintos casos
+
+propiedades:
+stretch propiedad por defecto 
+center ubica el flex container al centro de la pagina 
+flex-start ubica el flex arriba de la pagina, la diferencia que tiene es que este no se estira a todo el cross-axis, sino que solo deja una pequeña parte.
+flex-end ubica el flex abajo de la pagina
+baseline funciona similar a "flex-start" 
+
+
+propiedades de los items del flex:
+margin
+flex-grow asigna un valor a cada item dandoles la misma medida, haciendo flexibles a sus cajas
+flex-basis funciona como el "width" pero este posee mas jerarquia
+flex-shrink cede espacio dependiendo lo asignado a los item que se encuentran en su misma caja
+
+flex es un shotHam de los 3 anteriores
+
+syntaxis: flex: "flex-grow" "flex-shrink" "flex-basis"; las comillas son de referencia, por ende no van.
+
+*/
+*{
+    font-family: 'DM Sans', sans-serif;
+    }
+.flex-container{
+display: flex;
+height: 100vh;
+}
+.flex-item{
+  background: #18e;
+  color: #fff;
+  width: 120px;
+  height: 120px;
+  margin: 5px;
+}
+.orange{
+  background: #f70;
+}
+
+.green{
+  background: #050;
+}

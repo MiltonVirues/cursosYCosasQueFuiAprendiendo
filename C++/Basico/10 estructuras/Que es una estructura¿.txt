@@ -1,0 +1,64 @@
+¿QUE ES UNA ESTRUCTURA?
+Es una coleccion de uno a mas tipos de elementos denominados campos,
+cada uno de los cuales puede ser un tipo de dato diferente.
+
+Supongamos que se desea almacenar los datos de una coleccion de discos compactos(CD) de musica.
+Esots datos pueden ser:
+
+-Titulo
+-Artista
+-Numeros de canciones
+-Precio
+-Fecha de compra
+
+struct coleccion_CD {
+char titulo[30];
+char artista[25];
+int numCanciones;
+float precio;
+char fecha_compra[20];
+};
+
+Declaracion de una estructura=
+
+struct<nombreDeLaEstructura>{
+<tipoDeDato> <nombreDeCampo>
+<tipoDeDato> <nombreDeCampo>
+<tipoDeDato> <nombreDeCampo>
+...
+<tipoDeDato> <nombreDeCampo>
+};
+
+struct coleccion_CD {
+char titulo[30];
+char artista[25];
+int numCanciones;
+float precio;
+char fecha_compra[20];
+};
+Declarando Variables struct:
+
+struct coleccion_CD {
+char titulo[30];
+char artista[25];
+int numCanciones;
+float precio;
+char fecha_compra[20];
+};
+int main(){
+struct coleccion_CD CD1,CD2,CD3;
+
+}
+
+
+struct coleccion_CD {
+char titulo[30];
+char artista[25];
+int numCanciones;
+float precio;
+char fecha_compra[20];
+}CD1,CD2,CD3;
+
+
+
+

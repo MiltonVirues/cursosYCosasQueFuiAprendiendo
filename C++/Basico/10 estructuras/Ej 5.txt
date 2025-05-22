@@ -1,0 +1,41 @@
+/* Hacer 2 estructuras una llamada promedio que tendra los siguiente campos:
+nota1,nota2,nota3;
+y otro llamada alumno que tendra los siguiente miembros:
+nombre,sexo,edad; hacer que la estructura promedio este anidada en la estructura alumno, luego pedir todos los datos para un alumno,
+luego calcular su promedio, y por ultimo imprimir todos sus datos incluidos el promedio. */
+#include<iostream>
+#include<conio.h>
+using namespace std;
+struct promedio{
+	float nota1;
+	float nota2;
+	float nota3;
+
+};
+struct alumno{
+	char nombre[20];
+	char sexo[10];
+	int edad;
+	struct promedio prom;
+}a;
+int main(){
+	float P_A;
+cout<<"Nombre: ";cin.getline(a.nombre,20,'\n');
+cout<<"Sexo: ";cin.getline(a.sexo,10,'\n');
+cout<<"Edad: ";cin>>a.edad;
+
+cout<<"\n. Notas Del alumno:. \n";
+cout<<"Nota1: ";cin>>a.prom.nota1;
+cout<<"Nota2: ";cin>>a.prom.nota2;
+cout<<"Nota3: ";cin>>a.prom.nota3;
+P_A=(a.prom.nota1+a.prom.nota2+a.prom.nota3)/3;
+//Datos Finales del alumno
+cout<<"Nombre: "<<a.nombre<<endl;
+cout<<"Edad: "<<a.edad<<endl;
+cout<<"Sexo: "<<a.sexo<<endl;
+cout<<"Promedio: "<<P_A<<endl;
+
+
+getch();
+return 0;
+}

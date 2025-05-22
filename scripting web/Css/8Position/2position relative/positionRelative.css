@@ -1,0 +1,29 @@
+*{
+  font-size: 30px;
+  font-weight: 100;
+  font-family: 'Bruno Ace SC', cursive;
+}
+
+div{
+  width: 120px;
+  height: 120px;
+  display: block;
+  background: yellow;
+}
+
+.caja1{
+  background-color: blue;
+}
+.caja2{
+  background-color: red;
+  position: relative;/*si a esta caja le damos solo un position relative no ocurrira nada en principio, por ejemplo si a la caja 1 le dieramos un "top:20px" no pasaria nada, pero en cambio si ese valor se lo añadimos ala segunda caja, esta se veria afectada por el position
+  lo que hace el position relative es adquirirle 4 propiedades nuevas ala caja que son "left" "right" "top" "bottom"*/
+top:20px;
+left: 100px;/*las funciones "top" y "left" son alas cuales el programa les da mas prioridad que las otras.*/
+}
+.caja3{
+  background-color: orange;
+}
+.caja4{
+  background-color: green;
+}

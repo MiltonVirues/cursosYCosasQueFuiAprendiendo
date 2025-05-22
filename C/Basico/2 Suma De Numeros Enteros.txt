@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+int num1;
+int num2;
+int resultado;
+printf("\nIngrese El Primer Valor: ");
+scanf("%d",&num1);/*con scanf se guarda el valor
+scanf("%Tipo de dato",&Variable al almacenar); 
+&=Operador de direccion
+d=Enteros Decimales
+*/
+printf("\nIngrese El Segundo Valor: ");
+scanf("%d",&num2);
+resultado=num1+num2;
+printf("el Resultado De La Suma Es:%d\n",resultado);
+return 0;
+}

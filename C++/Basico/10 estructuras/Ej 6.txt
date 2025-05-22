@@ -1,0 +1,49 @@
+/* Utilizar las 2 estructuras del problema 5, pero ahora pedir los datos para n alumnos,
+y calcular cual de todos tiene el mejor promedio, e imprimir sus datos. */
+#include<iostream>
+#include<conio.h>
+using namespace std;
+struct promedio{
+	float nota1;
+	float nota2;
+	float nota3;
+
+};
+struct alumno{
+	char nombre[20];
+	char sexo[10];
+	int edad;
+	struct promedio p;
+}a[100];
+int main(){
+int N_A,pM;
+float P_A[100],M=0;
+cout<<"Digite el numero de alumnos: ";cin>>N_A;
+for(int i=0;i<N_A;i++){
+	fflush(stdin);
+	cout<<i+1<<". Nombre: ";cin.getline(a[i].nombre,20,'\n');
+	cout<<i+1<<". Sexo: ";cin.getline(a[i].sexo,20,'\n');
+	cout<<i+1<<". Edad: ";cin>>a[i].edad;
+	
+	cout<<"\nBien, Ahora Digite Las Notas: \n";
+	cout<<". Nota 1: ";cin>>a[i].p.nota1;
+	cout<<". Nota 2: ";cin>>a[i].p.nota2;
+	cout<<". Nota 3: ";cin>>a[i].p.nota3;
+	cout<<"\n";
+	//Vamos a sacar el promedio del alumno
+	P_A[i]=(a[i].p.nota1+a[i].p.nota2+a[i].p.nota3)/3;
+	if(P_A>M){
+		M=P_A;
+		pM=i;
+		
+	}
+	
+}
+cout<<"\nMayor Promedio";
+cout<<"Nombre: "<<a[pM].nombre<<endl;
+cout<<"Sexo: "<<a[pM].sexo<<endl;
+cout<<"Edad: "<<a[pM].edad<<endl;
+cout<<"Mayor Promedio: "<<P_A[pM]<<endl;
+getch();
+return 0;
+}

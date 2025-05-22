@@ -1,0 +1,37 @@
+/*
+que vino a resolver la especifidad: 
+css es una hoja de estilo en cascada, osea que va priemro un estilo y otro y otro en ese orden hasta el final
+el mas importante siemrpe es el ultimo por eso en cascada, porque va callendo
+b{
+	color:red;
+}
+b{
+	color:green;
+}
+b{
+	color:blue;
+}
+lo que hace aca es que,sin que lo podamos ver, en un corto perido de tiempo se modifica de color a color
+ahora nos preguntamos,¿Que pasa si yo quiero que esto no me lo cambie por nada del mundo?¿Que pasa si yo quiero que halla un para de elementos con un color,pero despues quiero definir un elemento de ese tipo con otro color?
+¿que pasa con estas cosas?¿que pasa sino quiero dejar como prioridad a algo y no quiero que siempre sea el ultimo el que mas cuente?
+esto viene a resolver la especifidad.
+la forma en la que podemos cambiar las propiedades sin afectar al resto.ser consciente de como funciona la logica
+es todo cuestion de jerarquias, por ejemplo una propiedad que le quiere dar color rojo, pero otra con mas poder que le quiere dar un color verde
+Jerarquias:
+[pseudo-elemntos=elementos]<[atributos=seudo-clases=clases]<[id]<[styles]<[!important]
+
+estas jerarquias dependiendo cual sea mayor ala otra va a cambiar el resultado final
+
+Ejemplo*/
+.color-a{/*aunque deberia tomar al blue en cuenta por ser el ultimo, 
+la jerarquia no se lo permite, porque la clase es superior al elemento*/
+	color: red;
+}
+h1{
+	color: blue;
+
+}
+/*El mayor de la jerarquia es el important y se escribe de la siguiente manera*/
+h1{
+color: green !important;	
+}

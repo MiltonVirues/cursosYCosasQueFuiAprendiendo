@@ -1,0 +1,33 @@
+/*Es css tenemos dos tipos de unidades 
+las relativas y las fijas. Las que son relativas dependen de algo, y las fijas serian por ejemplos, los cm,los pixeles etc.*/
+
+/*.hola{/*Caja contenedora
+	font-size: 16px;
+font-size:100px;esta seria una medida fija
+px=pixeles
+cm=centimetros
+mm=milimetros
+pt=puntos
+*/ 
+/* las medidas relativas tienen 
+rem = no se vio
+em = 1em = el valor que tenga la caja contenedora= por ejemplo"hola"
+}
+/*Que pasa cuando adaptemos esto a un dispositivo android?, 
+las medidas relativas sirven para este caso. */
+/*.hola__p{
+font-size: 5em;
+}*/
+*{
+padding: 0px;
+margin: 0px;
+}
+.hola{
+	background-color: #000;
+width: 50vh;/*estas son medidas relativas, sirven para acomodar en el caso de utilizar un dispositivo
+vh=alto
+vw=ancho
+esto se vera mas adelante debido a que pertenece a otro tema
+*/
+height: 50vw;
+}

@@ -1,0 +1,44 @@
+/*SOn propiedades que se pueden aplicar a un elemento:
+los que se veran seran los siguientes:
+
+::first-line    | BLOCK modifica la priemr linea de la pagina
+::first-letter  | BLOCK modifica la primer letra de la pagina
+
+::placeholder funciona como un texto indicativo y se coloca primero en html
+::selection es la etiqueta que se puede utilizar para cuando pasamos el mouse por una letra esta tengap or ejemplo un fondo azul y letra blanca 
+
+::before | HIJOS - CONTENT (NECESARIO) - INLINE funciona para colocar un contenido antes de cierto contendor
+::after | HIJOS - CONTENT (NECESARIO) - INLINE funciona para colocar un contenido despues de cierto contendor
+
+sintaxis:
+
+ "elemento"{
+  
+ }
+
+ "elemento" :: "pseudoelemento" {
+  
+ }
+
+*/
+*{
+  font-family: 'Anton', sans-serif;
+font-size: 20px;
+}
+form{
+  margin: 100px auto;
+  display: block;
+  background: #555;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+}
+b::before{
+content: "Escriba aqui: ";
+color: skyblue;
+}
+b::after{
+  content: " quiero";
+color: red;
+}
+

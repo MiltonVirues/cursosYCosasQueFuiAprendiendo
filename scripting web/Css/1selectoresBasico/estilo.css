@@ -1,0 +1,16 @@
+p:hover{/*el selector sirve para elegir lo que queremos cambiar
+tipos de selectores en css=
+Universal: "*" selecciona a todos los elementos
+De tipo: para este selector se utiliza la etiqueta que queres editar. por ej: h1, input,p,etc.
+clases: para poder utilizar este selector, primero ay que elegir una etiqueta y de ahi poner "class="hola-h1". esto es en html
+en css se utiliza "."+el nombre de la clase
+ID: se utiliza "#"+nombre en css. en html se utiliza "id="nombre del id"". la diferencia con la clase es que el id es un identificador, por ende tiene que ser diferente cada id puesto,(obviamente XD).
+por atributo: la sintaxis es la siguiente: "[atributo="valor"]", se crea un atributo en html y se le edita, puede llevar cualquier nombre y valor
+descendiente: la sintaxis es la siguiente: "nombre de la etiqueta principal+etiqueta secundaria", tambien se puede hacer con clases ".nombredelaclase+etiquetaSecundaria"
+pseudo-clases: sintaxis: "etiqueta:pseudoclase"*/
+	color: orange;/*una vez que tenemos seleccionado lo que queremos cambiar tendriamos que elegir que cosa cambiarle
+	por ejemplo: el color, el ancho, el borde, etc.
+elementos en linea: se ajustan a su contenido
+elementos en bloque: ocupan todo un espacio
+*/
+}

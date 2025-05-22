@@ -1,0 +1,30 @@
+*{
+font-family: 'Righteous', cursive;
+font-weight:100 ;
+font-size: 30px;
+}
+/*.caja1{
+width:200px;
+height: 200px;
+background: red;
+margin: auto;
+outline: 10px solid black; /*Hace el mismo efecto que border, pero sin modificar nada
+} 
+*/
+
+div{
+width:200px;
+height: 200px;
+background: yellow;
+display: inline-block;
+
+}
+
+.caja1{
+  outline: 5px solid blue;
+}
+.caja4{
+  outline: 5px solid blue;
+}
+/*Porque ala caja 1 me la pone la linea del outline por debajo y ala caja 4 me pone la linea del outline por arriba, eso se encuentra en z inix, que es algio que se verac mas adelante*/
+/*La ventaja del outline sobre el border, es que el outline no tiene un tamaño real por el que no afecta alas demas cajas, a diferencia del border que dependiendo la cantidad de px, se lo reduciria ala caja.*/

@@ -1,0 +1,26 @@
+1 Introduccion
+
+C++ consiste basicamente de: Librerias,Funcion Principal y variables.
+
+Variable: es un espacio de memoria, donde yo voy a guardar un dato determinado.
+
+Ej de algunas funciones:
+#include<aqui iria la libreria> = Incluye librerias.
+int main (){} = Es la funcion principal.
+int = Funcion de numero entero.
+char = Funcion de caracter.
+float = funcion de numero decimal.
+double = Funcion para numeros decimales "mas precisos".  
+using namespace std; = Ayuda con los "Cout".
+cout<<""; = Funcion para escribir texto y que este salga en pantalla.
+cout.presicion(aqui se definen hasta que cantidad se muestra en pantalla) = sirve para dejar solo la cantidad de numeros especificos que queremos de un "numero flotante".
+return; = Funciona como un finalizador del programa.
+<<endl = Crea una linea de espacio de texto.
+\n = Tambien crea una linea de espacio de texto.
+\t = Sirve para centrar el texto en un programa.
+
+EJ de algunas librerias:
+
+iostream
+stdio.h
+math.h

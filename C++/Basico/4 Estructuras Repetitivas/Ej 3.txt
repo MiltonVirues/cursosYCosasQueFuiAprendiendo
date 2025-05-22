@@ -1,0 +1,17 @@
+/* La sentencia for
+for(expr1;expresion logica;expr2){
+conjunto de instrucciones;
+}
+*/
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main(){
+	int i;
+	
+	for(i=1;i<=10;i++){//aca se puede ver como se ahorra varias lineas de codigo utilizando una funcion. ademas que te permite agregar una variable tipo int o char dentro de la funcion.
+		cout<<i<<endl;
+	}
+	getch();
+	return 0;
+}

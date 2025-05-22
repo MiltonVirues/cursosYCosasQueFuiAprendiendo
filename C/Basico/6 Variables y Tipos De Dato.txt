@@ -1,0 +1,23 @@
+/*
+Variables
+*/
+#include<stdio.h>
+int main(){
+char C= 'y';//(&c)variable tipo caracter, tamaño de 1 Byte,rango 0...255
+// %c = forma para almacenarlo en el scanf
+int a=20;//(%i,%d)variable tipo entero, tamaño de 2 bytes, rango -32768...32767
+short e=-1;//(%i,%d)variable tipo entero, tamaño 2 bytes, rango -128...127
+unsigned int u=25;//(%i,%d)variable tipo entero,tamaño 2 bytes, rango 0...65535
+long l=5932;//(%li,%d)variable tipo entero, tamaño 4 bytes -2147483648...2147483648
+float f=72.534;//(%f)variable tipo decimal, tamaño 4 bytes, rango...muy amplio
+double d=123223.354654;//(%f)variable decimal mas precisa que "float",tamaño 8 bytes, rango...muy amplio
+printf("%.2f\n",f);//".2 es la manera de redondear el numero decimal"
+printf("%.2f\n",d);//".2 es la manera de redondear el numero decimal"
+printf("%c\n",C);
+printf("%i\n",a);
+printf("%i\n",e);
+printf("%li\n",l);
+printf("%i\n",e);
+
+return 0;
+}

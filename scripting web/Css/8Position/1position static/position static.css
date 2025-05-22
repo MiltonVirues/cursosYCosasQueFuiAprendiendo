@@ -1,0 +1,13 @@
+*{
+  font-size: 30px;
+  font-weight: 100;
+  font-family: 'Bruno Ace SC', cursive;
+}
+
+div{
+  width: 120px;
+  height: 120px;
+  display: block;
+  background: yellow;
+}
+/*Static es el valor por defecto. Cuando algo esta posicionado significa que va a afetar el flujo de HTML, el flujo de HTML es el orden que ponemos en todos los elementos*/

@@ -1,0 +1,33 @@
+/* Hacer un programa que simule un cajero automatico con un saldo inicial de 1000 dolares */
+#include <iostream>
+using namespace std;
+int main(){
+	int saldo_inicial=1000,opc;
+	float extra,saldo=0,retiro;
+	cout<<"\t .::Bienvenido a Su cajero Automatico::. \t";
+	cout<<"\n1. Ingresar Dinero a su cuenta";
+	cout<<"\n2. Retirar Dinero de su cuenta";
+	cout<<"\n3. Salir....";
+	cout<<"\nOpcion: ";cin>>opc;
+	switch(opc){
+		case 1:
+	    cout<<"Digite su abonado: ";cin>>extra;
+	    saldo=saldo_inicial+extra;
+	    cout<<"Su saldo actual es de: "<<saldo;
+	    break;
+	    case 2:
+	    	cout<<"Digite la cantidad de dinero que desea retirar: ";cin>>retiro;
+	    	if(retiro>saldo_inicial){
+	    		cout<<"Ops! No contas con ese dinero";
+			}
+			else{
+			saldo= saldo_inicial-retiro;
+			cout<<"Dinero Actual: "<<saldo;
+			break;
+			case 3:
+			cout<<"Vuelva pronto :D";break;
+			}
+	}
+
+	return 0;
+}

@@ -1,0 +1,47 @@
+.tipografias{
+	font-size: 20px;
+}
+
+.tipografias__{
+	font-size: 1em; /*tamaño*/
+	font-family: 'Rubik Bubbles', cursive ; /*tipografia*/
+	font-weight: 100 ; /*grosor*/
+	color: blueviolet; /*color*/
+}
+/*
+Cajas:
+Existen 2 tipos:
+En bloque: un ejemplo serian los "h" que ocupan hasta el final de la pantalla
+En linea: un ejemplo serian los "b" que ocupan una pequeña parte
+esto se puede modificar
+
+y la sintaxis seria la siguiente:
+
+elemento{
+	display: (Aca colocamos "block;" 
+	si queremos que nuestro elemento ocupe hasta el final de la pantalla
+	y "inline;" si queremos que ocupe una parte pequeña de esta.
+tambien ay otros conceptos:
+a una caja en linea, no se le puede agregar "height".
+lo opuesto pasa con una caja en bloque, a esta no se le puede agregar "width".
+	)
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

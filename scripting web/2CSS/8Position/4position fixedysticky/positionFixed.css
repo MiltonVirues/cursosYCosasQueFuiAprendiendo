@@ -1,0 +1,21 @@
+*{
+  font-size: 40px;
+  font-weight: 100;
+  font-family: 'Bruno Ace SC', cursive;
+}
+/* El fixed funciona como un texto, imagen etc. que se mantiene mientras haces scroll
+Ejemplo:
+.caja-fixed{
+  background: red ;
+  position: fixed;
+  top:20px;
+} */
+
+/* el position stricky es como una mzcla entre el fixed y el absolute, ya que si se posiciona en una parte de la pantalla se quedara quito hasta scrollear despues.
+.caja-fixed{
+  background: red ;
+  position: sticky;
+  opacity: 0.3;
+  top:0;
+}
+*/

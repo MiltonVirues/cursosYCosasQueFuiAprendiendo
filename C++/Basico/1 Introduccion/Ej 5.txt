@@ -1,0 +1,19 @@
+/* Realize un programa que lea de entrada estandar los siguientes datos de una persona:
+Edad:Dato tipo entero
+Sexo: Dato tipo caracter
+Altura: Dato tipo decimal
+tras leer los datos, el programa debe mostrarlos en la salida estandar */
+include<iostream>
+using namespace std;
+int main(){
+int edad;
+char sexo [10];
+float altura;
+cout<<"\nDigite su edad: ";cin>>edad;
+cout<<"\nDigite su sexo: ";cin>>sexo;
+cout<<"\nDigite SU altura: ";cin>>altura;
+cout<<"\nSu edad es: "<<edad;
+cout<<"\nSu sexo es: "<<sexo;
+cout<<"\nSu altura es: "<<altura;
+return 0;
+}

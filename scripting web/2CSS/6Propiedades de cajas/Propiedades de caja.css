@@ -1,0 +1,45 @@
+*{
+	font-family: 'Righteous', cursive;
+	font-weight: 100;
+	font-size: 30px;
+
+}
+h2{
+	background-color: blue; /*cambia el fondo de la caja*/
+	display: inline;
+	/*padding-bottom:20px;/*distancia entre el texto y abajo*/
+	/*padding-top: 20px;/*distancia entre el texto y arriba*/
+	/*padding-left: 20px;/*distancia entre el texto y izquierda*/
+	/*padding-right: 20px;/*distancia entre el texto y derecha*/
+	/*con el padding solo estariamos haciendo lo mismo para todas las posiciones,
+	sin embargo si por ejemplo hacemos lo siguiente=
+	"padding: 20px 30px;" el 20 lo tomaria como eje x y el 30 como eje y
+	padding sigue lo siguiente
+	"padding:top right botton left;" 
+	en el caso que no definamos el cuarto, va a ser equivalente al segundo*/
+	padding: 100px;
+	/*height:100px ;
+	width: 100px;
+	box-sizing: border-box;/*sino tiene esta funcion le estamos dando un largo y un ancho de 100px
+	pero al añadirle ala funcion, la caja no solo tiene 100px de alto y ancho sino, que tiene esas medidas ademas tiene 
+	50px ala derecha e izquierda, midiendo el doble el ancho "width" y midiendo 10px de mas arriba y abajo "height"
+
+	una manera de centrar el texto seria:*/
+	text-align: center;
+	/*Margin:
+	el margin es la distancia que ay entre 2 cajas
+	si tenemos un margin de 0 las cajas estan pegadas porque no ay distancia que las separe
+	su sintaxis es la siguiente=
+	*/
+	margin: 40px 20px;/*la manera de colocarlo es parecido al margin
+	*/
+	border-radius: 10px;/*como su nombre lo indica sirve para los bordes :v*/
+	border: 4px solid green ;
+	box-shadow: 2px/*eje x*/4px/*eje y*/10px/*difuminado*/0/*borde*/#000/*color*/;
+	text-shadow: 2px 4px 10px #139,2px 4px 10px #139,2px 4px 10px #139,2px 4px 10px #139;/*la sintaxis es igual, la diferencia es que
+	no tiene borde*/
+	/*para darle mas intensidad ala sombra seria de la siguiente manera=
+	text-shadow: 2px 4px 10px #139,2px 4px 10px #139; seria basicamente duplicar los parametros
+	*/
+	transform:rotate(45deg);/*una funcion para rotar las cajas*/
+}

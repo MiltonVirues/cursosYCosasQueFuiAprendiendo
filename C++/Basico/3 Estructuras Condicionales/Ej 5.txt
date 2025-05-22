@@ -1,0 +1,17 @@
+/* Realize un programa que lea un valor entero y determine si se trata de un valor par o impar */
+#include<iostream>
+using namespace std;
+int main(){
+	int numero;
+	cout<<"Digite un numero: ";cin>>numero;
+	if(numero%2==0){//lo que esta haciendo es calcular el residuo, si no sobra, el numero seria par
+		cout<<"El numero es par";
+	}
+	else if(numero==0){
+		cout<<"El numero es cero";
+	}
+	else{
+		cout<<"El numero es impar";
+	}
+	return 0;
+}

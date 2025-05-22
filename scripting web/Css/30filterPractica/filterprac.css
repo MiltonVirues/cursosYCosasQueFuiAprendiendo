@@ -1,0 +1,30 @@
+*{
+ font-family: 'Space Grotesk', sans-serif;
+  
+}
+.container{
+filter: contrast(20);
+background: #fff;
+}
+
+.caja{
+display: inline-block;
+width: 150px;
+height: 150px;
+background: #f00;
+margin: 40px;
+border-radius: 50%;
+filter: blur(2px);
+}
+.caja:first-child{
+  animation: transladar 2s alternate infinite;
+}
+
+@keyframes transladar{
+  0%{
+transform: translate(0);
+  }
+  100%{
+   transform: translate(160px); 
+  }
+}

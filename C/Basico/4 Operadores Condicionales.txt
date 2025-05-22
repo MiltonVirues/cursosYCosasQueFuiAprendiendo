@@ -1,0 +1,24 @@
+/*
+Toma de desiciones if 
+|operadores de igualdad|  |Operadores de relacion|
+== x es igual que y         > x es mayor que y 
+!= x es diferente de y      < x es menor que y
+                           >= x es mayor o igual que y
+                           <= x es menor o igual que y
+*/
+#include<stdio.h>
+int main()
+{
+int edad;
+prinf("Ingrese Su Edad: ");
+scanf("%d",&edad);
+if(edad>=18){
+	printf("Eres Mayor de edad...");
+	else if(edad==17){
+		printf("Casi Sos Mayor de edad...");
+	}
+}else{
+	printf("Eres menor de edad...");
+}
+return 0; // termina el programa
+}

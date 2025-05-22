@@ -1,0 +1,33 @@
+/*
+object-fit: 
+none   valor por defecto
+contain  la imagen se ajusta alas resoluciones reales
+cover   la imagen se ajusta al contenedor y recorta los bordes
+scale-down  verifica entre cual de las funciones anteriores es mas pequeña para la imagen
+
+sirve para posicionar desde una parte de la imagen en especifico del contenedor
+object-position:
+top
+bottom
+left 
+right
+por unidades de memida
+*/
+*{
+  font-family: 'Anton', sans-serif;
+font-size: 20px;
+}
+.caja{
+
+margin: 25px;
+width: 300px;
+height: 300px;
+}
+
+.caja img{
+height: 100%;
+width: 100%;
+border: 2px solid blue;
+object-fit: cover;
+object-position: bottom;
+}

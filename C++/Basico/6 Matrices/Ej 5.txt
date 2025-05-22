@@ -1,0 +1,36 @@
+ Hacer un Programa que lea una matriz de 3x3 y cree su matriz traspuesta.
+La matriz traspuesta es aquella en que la columna i era la fila i de la matriz original.
+
+1 2 3                 1 4 7
+4 5 6      --        2 5 8
+7 8 9                 3 6 9
+Matriz Original    Matriz Traspuesta
+
+#includeiostream
+#includeconio.h
+using namespace std;
+int main(){
+int numero[3][3];
+for(int i=0;i3;i++){
+	for(int j=0;j3;j++){
+	coutDigite un numero para la matriz [i][j] ;cinnumero[i][j];
+	}
+}
+coutMatriz Originaln;
+for(int i=0;i3;i++){
+	for(int j=0;j3;j++){
+		coutnumero[i][j];
+}
+coutn;
+}
+coutnMatriz Traspuesta;
+for(int i=0;i3;i++){
+	for(int j=0;j3;j++){
+		coutnumero[j][i];
+}
+coutn;
+}
+
+getch();
+return 0;
+}

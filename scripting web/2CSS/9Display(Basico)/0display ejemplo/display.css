@@ -1,0 +1,5 @@
+/*Display es una propiedad que lo que hace en si es modificar el comportamiento de las cajas
+Basicos que no hace falta ver:
+Block: espacio que ocupan desde la caja hasta el final, en block se puede modificar su tamaño, pero siguen ocupando hasta el final del contenedor
+Inline: espacio que ocupa un caja pequeña dependiendo su contenido, el inline no se puede modificar su tamaño
+Inline-BLock: opcion para modificar una caja,

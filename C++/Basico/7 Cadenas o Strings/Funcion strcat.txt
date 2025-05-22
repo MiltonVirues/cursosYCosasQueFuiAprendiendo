@@ -1,0 +1,14 @@
+//Añadir o concatenar una cadena con la otra - funcion strcat()
+#include<iostream>
+#include<conio.h>
+#include<string.h>
+using namespace std;
+int main(){
+char cad1[]= "Esto Es Una Cadena",cad2[]="De Mierda";
+char cad3[30];
+strcpy(cad3,cad1);//cad3 = "Esto es una cadena";
+strcat(cad3,cad2);//cad3 = "Esto es una cadena de mierda"; esta funcion añade una cadena con la otra
+cout<<cad3<<endl;
+getch();
+return 0;
+}

@@ -1,0 +1,39 @@
+/*
+Estructuras Anidadas 
+*/
+#include<stdio.h>
+#define length 2
+struct owner{
+	char nombre[20];
+	char direccion[30];
+};
+struct dog{
+	char nombre[20];
+	int edad;
+	struct owner ownerDog;
+}dogs[length];
+int main()
+{
+ for(int i=0;i<legth;i++)
+ {
+printf("\nNombre: ");
+scanf("%s",&dogs[i].nombre);
+printf("\nEdad: ");
+scanf("%s",&dogs[i].edad);
+printf("\nNombre Del dueño: ");
+scanf("%s",&dogs[i].ownerDog.nombre);
+printf("\nDireccion: ");
+scanf("%s",&dogs[i].ownerDog.direccion);
+printf("\n");
+ }
+ for(int i=0;i<length;i++)
+ {
+printf("El nombre del perro es: %s\n",dogs[i].nombre);
+printf("La edad del perro es: %i\n",dogs[i].edad);
+printf("El nombre del Dueño es:%s\n ",dogs[i].ownerDog.nombre);
+printf("La direccion del Dueño es:%s\n ",dogs[i].ownerDog.direccion);
+
+
+ }
+return 0;
+}

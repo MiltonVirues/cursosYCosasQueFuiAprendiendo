@@ -1,0 +1,19 @@
+/* Ej para  char, int, float y double:
+
+#include<iostream>
+using namespace std;
+
+int main(){
+
+int numero = 1;
+char caracter = A;
+float numero decimal = 1.04;
+double numero decimal pequeno = 1.0000000055;
+
+cout<<"\n Numero es: "<<numero;
+cout<<"\n Caracter es: "<<caracter;
+cout<<"\n Numero Decimal es: "<<numero decimal;
+cout<<"\n Numero Decimal Pequeno es: "<<numero decimal pequeno;
+
+return 0;
+}

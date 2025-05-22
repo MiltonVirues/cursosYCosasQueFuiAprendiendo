@@ -1,0 +1,12 @@
+//Invertir una cadena - funcion strrev()
+#include<iostream>
+#include<conio.h>
+#include<string.h>
+using namespace std;
+int main(){
+char cad[]= "Milton ";
+ strrev(cad);//invierte la posicion rellenada de una cadena
+cout<<cad<<endl;
+getch();
+return 0;
+}

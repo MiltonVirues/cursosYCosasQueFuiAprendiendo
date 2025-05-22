@@ -1,0 +1,44 @@
+/*
+Pseudoclases (mas comunes):
+
+
+:hover modifica el aspecto de una caja cuando el cursor esta sobre ella
+
+:link modifica el color de un enlace de la etiqueta "<a>", osea que cuando clickamos y volvemos al index, el color del enlace se modifica como una forma de avisar q se visito la pagina
+
+:visited va ala par de ":link" y funciona para modificar el color de un enlace de un dominio visitado por un usuario que accedio a nuestro index
+
+:active modifica el aspecto de una caja cuando esta se clickea, 
+
+:focus se modifica dependiendo los valores del focus sin necesidad de mantener apretada la caja, seria como ":active" pero sin mantener apretado con el mouse
+
+:lang funciona como funcion, ya que se le añaden parametros pero este actua con idiomas dentro del parametro: 
+Por ejemplo:(es,en,pr)
+para que funcione se tiene que añadir la siguiente etiqueta "lang()=""
+
+
+Sintaxis:
+ 
+ elemento{
+  
+ }
+
+ "elemento" : "pseudoClase"[( para el lang se añade"(idioma)")]{
+  
+ } 
+
+*/
+*{
+  font-family: 'Anton', sans-serif;
+font-size: 20px;
+}
+.caja{
+
+margin: 25px;
+
+}
+
+.caja b:lang(es){
+  background: blueviolet;
+  width: 600px;
+}

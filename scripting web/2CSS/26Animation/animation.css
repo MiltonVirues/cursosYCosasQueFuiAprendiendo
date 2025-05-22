@@ -1,0 +1,44 @@
+*{
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 30px;
+}
+.container{
+padding: 20px 5px;
+  background: #86f;
+}
+.caja{
+  background: #025;
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  animation-name: desplazamiento;/*campo donde se señala a cual animacion nos estamos refiriendo*/
+animation-duration: 1s;/*campo donde se señala el tiempo de duracion de la animacion*/
+  position: relative;
+  animation-iteration-count: 10;/*cantidad de veces que se va a repetir la animacion (0 a infinite)*/
+animation-direction: alternate;/*modifica cual parametro va a ir primero, por lo general del primero al ultimo o al ultimo al primero, y alternate que seria juntar ambas cosas(normal y reverse)*/
+animation-fill-mode: ;/*(none(valor por defecto)-backwards(valor que al concluir la animacion, este toma los valores del primer fotograma)-forwards(la caja se queda como la definimos a ultima instancia)-both(la caja inicia desde el principio con las propiedades que se encuentran en el "@keyframes"))modifica el comportamiento de la caja cuando su animacion concluye*/
+animation-timing-function: cubic-bezier(0.04,1.08,0.76,1.11);/*seria una manera de calcular con la velocidad con la que se mueve pero de maneram cuho mas precisa, es un valor de "animation-timing function"*/
+}
+@keyframes desplazamiento{/*bloque donde se maneja la animacion*/
+  /*2 maneras en como se comporta una animacion*/
+/*como empieza*/
+from{
+  left: 0;
+  }
+/*como termina*/
+to{
+left: 80%;
+  }
+  /*
+  tambien se puede hacer de la siguiente manera la cual es mas editable
+  0%{
+    sdfasfsf
+  }
+  50%{
+    fsfsfsdf
+  }
+  100%{
+
+  }
+  */
+}

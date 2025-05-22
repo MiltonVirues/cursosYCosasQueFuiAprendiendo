@@ -1,0 +1,7 @@
+el curso de html vamos a ver justamente todo lo que son los metadatos que son los metadatos bueno básicamente los
+metadatos son como una especie de información que lo que hace es describir a la información de un objeto o sea esa
+información que describe otra información así de simple esa información que describe datos no estos
+son recursos lo que se almacena en los metadatos lo que hacen es describir
+recursos bien cómo es eso viene un metadatos por ejemplo lo que podría llegar a hacer es describir algo tan
+fácil como por ejemplo un vídeo un vídeo es información es un recurso puede llegar a considerarse un objeto pero a
+su vez este vídeo quien acompañando por ejemplo en youtube de un título de descripción de etiquetas y por ahí

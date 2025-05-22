@@ -1,0 +1,2 @@
+Insertar elemntos en la pila>
+para poder insertar elementos en al pila,solo ay que seguir 4 pasos

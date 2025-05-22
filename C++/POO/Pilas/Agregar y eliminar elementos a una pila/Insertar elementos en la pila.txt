@@ -1,0 +1,7 @@
+Insertar elemntos en la pila>
+para poder insertar elementos en al pila,solo ay que seguir 4 pasos:
+
+1. Crear el espacio en memoria para almacenar un nodo.
+2. Cargar el valor dentro del nodo(dato).
+3. Cargar el puntero pila dentro del nodo(*siguiente).
+4. Asignar el nuevo nodo a pila.

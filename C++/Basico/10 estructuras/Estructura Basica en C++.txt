@@ -1,0 +1,42 @@
+//Estructura BAsica En C++
+#include<iostream>
+#include<conio.h>
+using namespace std;
+struct persona{
+	char nombre[20];
+	int edad;
+}
+persona1={"Milton",17},
+persona2={"Juan Carlos",63};
+
+int main(){
+cout<<"\nNombre1: "<<persona1.nombre;
+cout<<"\nEdad1: "<<persona1.edad<<endl;
+
+cout<<"\nNombre2: "<<persona2.nombre;
+cout<<"\nEdad2: "<<persona2.edad<<endl;
+
+getch();
+return 0;
+}
+
+//en el caso de que se le pida al usuario elnombre y edad
+#include<iostream>
+#include<conio.h>
+using namespace std;
+struct persona{
+	char nombre[20];
+	int edad;
+}persona1,;
+
+int main(){
+cout<<"\nNombre: ";cin.getline(persona1.nombre,20,'\n');
+cout<<"\nEdad1: ";cin>>persona1.edad;
+
+cout<<"\nImprimiendo Datos\n";
+cout<<"Nombre: "<<persona1.nombre<<endl;
+cout<<"Edad: "<<persona1.edad<<endl;
+
+getch();
+return 0;
+}

@@ -1,0 +1,11 @@
+/*
+Palabras reservadas y conversion de tipos de datos (casting)
+*/
+#include<stdio.h>
+int main(){
+	int a=80;
+	float f=45.3,suma= (float)a+f;
+	printf("%.2f",suma);
+	printf("entero%i\n flotante%.2f\n double%.3f caracter%c",a,(float)a,(double)a,(char)a);
+return 0;
+}

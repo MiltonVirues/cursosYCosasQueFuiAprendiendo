@@ -1,0 +1,53 @@
+¿QUE ES EL ORDENAMIENTO POR SELECCION?
+Es un algoritmo de ordenamiento que requiere O(n2) operaciones para ordenar una lista de n numeros.
+Su funcionamiento es el siguiente:
+1. Buscar el minimo elemento de la lista.
+2. Intercambiar con el primer elemento.
+3. Buscar el minimo del resto de la lista.
+4. Intercambiar por el segundo.
+5. Y asi sucesivamente.
+
+Ejemplo:
+
+|4||3||1||5||2| //El numero de menor valor pasa al menor sub-indice disponible y el numero que estaba en el menor sub indice se intercambia con este mismo
+|1||3||4||5||2|
+|1||2||4||5||3|
+|1||2||3||5||4|
+
+|1||2||3||4||5|
+Ordenado
+
+Codeado:
+//Ordenamiento Por Seleccion
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main(){
+	int numero[]={4,3,1,5,2};
+	int i,j,aux,min;
+	//algoritmo por ordenamiento por seleccion
+	for(i=0;i<5;i++){
+min=i;
+for(j=i+1;j<5;j++){
+	if(numero[j]<numero[min]){
+		min=j;
+	}
+}
+aux=numero[i];
+numero[i]=numero[min];
+numero[min]=aux;
+	}
+cout<<"Ascendente";
+for(i=0;i<5;i++){
+	cout<<numero[i]<<endl;
+}
+cout<<"Descendente";
+for(i=4;i>=0;i--){
+	cout<<numero[i]<<endl;
+}
+
+	getch();
+	return 0;
+}
+
+

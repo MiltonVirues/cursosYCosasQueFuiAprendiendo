@@ -1,0 +1,15 @@
+/* Escriba un programa que lea de la entrada estandar tres numeros. despues debe haber un cuarto numero e indicar si el numero coincide con alguno de los introducidos con anterioridad */
+#include<iostream>
+using namespace std;
+int main(){
+	int n1,n2,n3,n4;
+	cout<<"Digite el primer, segundo y tercer numero respetando espacios: ";cin>>n1>>n2>>n3;
+	cout<<"Digite un cuarto numero: ";cin>>n4;
+	if((n1==n4)||(n2==n4)||(n3==n4)){
+		cout<<"El cuarto numero coincide almenos con uno de los anteriores";
+	}
+	else{
+		cout<<"El cuarto numero no coincide con los anteriores";
+	}
+return 0;
+}

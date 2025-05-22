@@ -1,0 +1,23 @@
+*{
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 25px;
+}
+.container{
+  padding: 20px 5px;
+  background: #86f;
+}
+.caja{
+  background: #025;
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  display: flex;
+  color: #fff;
+  transform: ;/*(-translateX(translada un objeto en el eje X dentro del elemento en el que se encuentra)-translateY(translada un objeto en el eje Y dentro del elemento en el que se encuentra)-translate(es un shortham que nos acorta translate X y translateY "translate(X,Y)")-scale(modifica la escala de la caja, tambien posee scale "X Y Z")-skew(modifica la forma de la caja y se configura en "deg"))*/
+}
+.caja:hover{
+
+}
+b{
+  margin: auto;
+}

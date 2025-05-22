@@ -1,0 +1,10 @@
+/*LA metodologia BEM seria evitar seleccionar muchas clases y generar conflictos por doquier, de una forma en la que podemos conocer y darnos cuenta.
+de que elemento estamos seleccionando, apartir de las clases.
+nos basamos en el nombre de la clase para saber que elemento estamos seleccionando
+la sintaxis esta en html*/
+.formulario__input-primero{
+	color: blue;
+}
+.formulario__input{
+	color: red;
+}

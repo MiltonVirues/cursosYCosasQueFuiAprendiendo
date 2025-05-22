@@ -1,0 +1,24 @@
+/* Escribe un programa que defina un vector de numeros y calcule si existe algun entero en el vector cuyo valor 
+equivale a la suma del resto de numero del vector */
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main(){
+int numeros[5]={1,2,3,4,10};
+int suma=0,mayor=0;
+for(int i=0;i<5;i++){
+	suma += numeros[i];
+if(numeros[i]>mayor){
+	mayor=numeros[i];
+}	
+}
+if(mayor==suma-mayor){
+cout<<"El numero"<<mayor<<" equivale ala suma de los demas";
+}
+else{
+	cout<<"No existe un numero igual que se ala suma de los demas";
+}
+	getch();
+	return 0;
+}

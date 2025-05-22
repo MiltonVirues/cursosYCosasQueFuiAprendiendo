@@ -1,0 +1,97 @@
+ORDENACION RAPIDA(QuickSort):
+
+El funcionamiento del algoritmo es simple, se basa en la division de la lista de particiones a ordenar,
+en definitiva aplica la tecnica "divide y venceras". El metodo es, posiblemente, el mas pequeño de codigo,
+mas rapido de media, mas elegante y mas interesante y eficiente de los algoritmos conocidos de ordenacion.
+
+El algoritmo divide los n elementos de la lista a ordenar en dos partes o particionesseparadas por un elemento:
+una participacion izquierda, un elemento central denominado pivote, y una participacion derecha.
+
+La particion se hace de tal forma que todos los elementos de la primera sublista(particion izquierda)son menores que todosloselementos de la segunda sublista(participacion derecha).
+Las dos sublistas se ordenan independientemente.
+
+Algoritmo QuickSort:
+Los pasos que sigue el algoritmo quicksort son:
+
+1. Seleccionar el elemento central de a[] como pivote.
+2. Dividir los elementos restantes  en particiones izquierda y derecha, 
+de modo que ningun elemento ala derecha tenga una clave mas pequeña que la del pivote.
+3. Ordenar la  particion izquierda utilizando quicksort recursivamente.
+4. Ordenar la  particion derecha utilizando quicksort recursivamente.
+5. La solucion es particion izquierdaseguida porel pivote y la particion derecha.
+
+Ejemplo:
+
+posicion central=(primero+ultimo)/2
+central=3
+pivote=a[central]
+pivote=4;
+pivote=()
+|8||3||6||(4)||2||5||7||1|// lo quecorresponda al lado izquierdo del pivote debe ser menor a  este, mientras que el derecho mayor
+ i                      j
+|1||3||6||(4)||2||5||7||8|
+
+
+|1||(3)||2||4|         |6||5||7||8|
+ i         j
+|1||(3)||2||4|         |6||5||7||8|
+|1||(2)||3||4|         |6||5||7||8|
+     j   i              i        j  
+|1||(2)||3||4|         |5||6||7||8|
+
+|1||2||3||4||5||6||7||8|
+Ordenado
+
+Codeado:
+ 
+//Ordenamiento QuickSort
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+void intercambio(float &x, float &y){
+	float aux;
+	aux=x;
+	x=y;
+	y=aux;
+}
+void quicksort(float a[],int primero, int ultimo){
+int i,j,central;
+float pivote;	
+
+	central=(primero+ultimo)/2;
+	pivote=a[central];
+	i=primero;
+	j=ultimo;
+	do{
+	while(a[i]<pivote) i++;
+	while(a[j]>pivote) j--;	
+	if(i<=j){
+	intercambio(a[i],a[j]);
+	i++;
+	j--;
+	}
+	}while(i<=j);
+	if(primero<j){
+		quicksort(a,primero,j); //ordenamos la sublista izquierda
+	}
+	if(i<ultimo){
+		quicksort(a,i,ultimo); //Ordenamos la sublista derecha
+	}
+}
+int main(){
+float arreglo[]={4,7,1,8,2,10,5,9,3};
+quicksort(arreglo,0,8);
+cout<<"Arreglo en forma ascendente"<<endl;
+for(int i=0;i<9;i++){
+	cout<<arreglo[i]<<"|";
+}
+cout<<"Arreglo en forma descendente"<<endl;
+for(int i=8;i>=0;i--){
+	cout<<arreglo[i]<<"|";
+}
+
+getch();
+return 0;
+}
+

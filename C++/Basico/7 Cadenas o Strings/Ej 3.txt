@@ -1,0 +1,26 @@
+/* Pedir al usuario dos cadena de caracteres,
+e indicar si ambas cadenas son iguales, en caso de no serlo, indicar cual es mayor alfabeticamente. 
+*/
+#include<iostream>
+#include<conio.h>
+#include<string.h>
+using namespace std;
+int main(){
+char frase[30],frase2[30];
+cout<<"Digite una palabra: ";cin.getline(frase,30,'\n');
+cout<<"Digite otra palabra: ";cin.getline(frase2,30,'\n');
+if(strcmp(frase,frase2)==0){
+	cout<<"Las frases son iguales";
+}
+	else if(strcmp(frase,frase2)>0){//indica alfabeticamente si frase es mayor alfabeticamente a frase2
+	
+		cout<<frase<<"Es mayor alfabeticamente \n";
+	}
+	else{
+		cout<<frase2<<"Es mayor alafabeticamente";
+	}
+
+
+getch();
+return 0;
+}

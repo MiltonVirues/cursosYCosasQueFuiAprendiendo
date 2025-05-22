@@ -1,0 +1,11 @@
+#include<stdio.h>//esta linea de codigo incluye al programa el contenido del encabezado estandar de entrada y salida
+//(en otras palabras llama alas bibliotecas de entrada y salida)
+
+
+int main() //Funcion principal. Todo programa en C comienza atravez de la funcion principal.
+{
+printf("Hola xd \n");
+return 0;
+} // fin del bloque de codigo/funcion.
+
+\n=Secuencia de escape, o que crea una nueva linea

@@ -1,0 +1,25 @@
+/*
+Funciones Basicas en C
+*/
+#include<stdio.h>
+void saludo()
+{
+printf("Hola");
+return;
+}
+int suma();
+int main()
+{
+saludo();
+printf("%i\n",suma());
+return 0;
+}
+int suma()
+{
+/*
+	int num=12;//en este caso saldra un error y para solucionarlo se declaran los num y num2 arriba
+	int num2=4;
+	*/
+int suma=num+num2;
+return suma;
+}

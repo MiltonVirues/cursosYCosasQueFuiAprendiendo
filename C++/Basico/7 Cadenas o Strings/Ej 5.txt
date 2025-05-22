@@ -1,0 +1,29 @@
+/* Hacer un programa que determine si una palabra es polindroma 
+
+palabras polindromas= 
+oso=oso
+reconocer=reconocer
+anitalavalatina=anitalavalatina
+*/
+#include<iostream>
+#include<conio.h>
+#include<string.h>
+using namespace std;
+int main(){
+	char palabra[20],palabra2[20];
+	cout<<"Digite una palabra: ";cin.getline(palabra,20,'\n');
+	strcpy(palabra2,palabra);
+	strrev(palabra2);//Estamos invirtiendo a palabra 2
+	if(strcmp(palabra,palabra2)==0){
+		cout<<palabra<<"\t Es una palabra polindroma o capicua";
+	
+}
+else{
+	cout<<palabra<<"\t No es polindroma o capicua";
+}
+
+
+
+getch();
+return 0;
+}

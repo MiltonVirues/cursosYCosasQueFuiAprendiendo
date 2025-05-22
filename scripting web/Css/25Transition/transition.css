@@ -1,0 +1,46 @@
+/*
+
+*/
+*{
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 30px;
+}
+.container{
+padding: 20px 5px;
+  background: #86f;
+}
+.caja{
+  background: #025;
+  height: 100px;
+  width: 100px;
+  padding: 30px;
+  transition-property: left, background; /*elemento al cual queremos que pase por una transicion*/
+  transition-duration: 1s, 3s;/*cantidad de tiempo que queremos que dure la transition*/
+ /* transition-delay: 3s; cantidad de tiempo que va a esperar el usuario para que comiense y termine la transicion*/
+  margin: 20px;
+  position: relative;
+  left: 0;
+  
+}
+.container:hover>.caja{
+  left: 80%;
+  background: #fff;
+}
+.caja:hover{
+  background: #0f0;
+}
+.caja:first-child{
+/*transition-timing-function: linear;*/
+}
+.caja:nth-child(2){
+/*  transition-timing-function: ease; funcion por defecto, empieza rapido y termina rapido*/
+}
+.caja:nth-child(3){
+/* transition-timing-function: ease-out;*/
+}
+.caja:nth-child(4){
+ /* transition-timing-function: ease-in;empieza despacio y temrina despacio*/
+}
+.caja:nth-child(5){
+ /* transition-timing-function: ease-in-out; */
+}

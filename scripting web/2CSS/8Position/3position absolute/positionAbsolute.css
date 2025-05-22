@@ -1,0 +1,59 @@
+/*Lo que hace el position absolute es borrar el espacio reservado para una caja en especifico, y ese espacio lo utiliza una caja cercana, ya que toma como si no hubiese nada ahi.*/
+*{
+  font-size: 30px;
+  font-weight: 100;
+  font-family: 'Bruno Ace SC', cursive;
+}
+div{
+display: block;
+background: green;
+position: absolute;
+}
+div div{
+height: 75px;
+width: 75px;
+background: yellow;
+}
+.contenedor{
+  display: block;
+  position: relative;
+  border: 4px solid red;
+
+   width: 450px;
+  height: 450px;
+}
+/*ejemplo para ver si funciona el absolute colocado en "div", esto funcionaria si tuviera un punto de referencia estatico, pero ocurre otra cosa cuando es relativo:
+.caja1{
+top:0;
+
+}
+.caja2{
+left: 0;
+}
+.caja3{
+right: 0;
+}
+.caja4{
+bottom: 0;
+}
+*/
+.caja1{
+right: 0;
+bottom: 0;
+}
+.caja2{
+right: 0;
+}
+.caja3{
+top:0;
+}
+.caja4{
+bottom: 0;
+}
+.caja5{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin:auto;
+}

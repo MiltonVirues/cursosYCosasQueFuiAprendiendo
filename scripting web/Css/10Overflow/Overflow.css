@@ -1,0 +1,20 @@
+/*El overflow es como un scroll
+overflow:visible; Valor por defecto
+overflow:hidden; Esconde el scroll
+overflow:scroll; Coloca un scroll en el eje X e Y
+overflow:auto;  Detecta una zona que sale y acomoda el texto
+overflow-x:visible/hidden/scroll/auto; se pueden usar las funciones anteriores pero exclusivamente en el eje X
+overflow-y:visible/hidden/scroll/auto; se pueden usar las funciones anteriores pero exclusivamente en el eje Y
+*/
+*{
+  font-weight: 100;
+  font-size: 40px;
+}
+div {
+  margin: 50px;
+  width: 320px;
+  height: 350px;
+  border: 4px solid red;
+background: grey;
+overflow: auto;
+}

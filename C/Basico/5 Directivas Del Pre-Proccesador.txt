@@ -1,0 +1,25 @@
+/* 
+Directivas del pre-procesador
+Hablemos de la directiva "#include<>" la primera es la forma anterior vista, la segunda es #include "nombre del archivo";
+
+Directiva #define,(crea constantes simbolicas y macros),(las constantes son inmutables...osea no pueden cambiar de valor por eso no lleva el siguiente simbolo "=").
+*/
+// %i= debe ser como un float. numero entero
+#include<stdio.h>
+#include "nombre del archivo"
+#define PI 3.14159
+#define CUBO(a) a*a*a
+/*
+int main(){
+	int suma;
+	suma=PI+3;
+	printf("%i\n",suma);
+	return 0; 
+}
+*/
+int main(){
+	int a=3;
+	suma=PI+3;
+	printf("el cubo de la variable a es: %i\n",CUBO(a));
+	return 0; 
+}

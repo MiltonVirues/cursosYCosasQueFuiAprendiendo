@@ -1,0 +1,59 @@
+¿QUE ES EL ORDENAMIENTO POR INSERCION?
+Es una manera muy natural de ordenar para un ser humano, y puede usarse facilmente para ordenar un mazo de cartas numeradas en forma arbitraria.
+Requiere O(n2)operaciones para ordenar una lista de n elementos.
+
+Ejemplo: 
+Si 
+|numeroIzq > numeroActual
+|Cambio
+Numeroizq={}
+Numeroactual=()
+
+
+|(5)||3||4||1||2|
+|{5}||(3)||4||1||2|
+|3||{5}||(4)||1||2|
+|3||4||{5}||(1)||2|
+|3||4||1||{5}||(2)|
+|3||{4}||(1)||2||5|
+|{3}||(1)||4||2||5|
+|1||3||{4}||(2)||5|
+|1||{3}||(2)||4||5|
+
+|1||2||3||4||5|
+Ordenado
+
+Codeado:
+
+//Ordenamiento por Insercion
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main(){
+	int numero[]={4,2,3,1,5};
+	int i,pos,aux;
+	//Algoritmo del ordenamiento por insercion
+	for(i=0;i<5;i++){
+		pos=i;
+		aux=numero[i];
+		while((pos>0)&&(numero[pos-1]>aux)){
+		numero[pos]=numero[pos-1];
+		pos--;
+		}
+		numero[pos]=aux;
+	}
+	cout<<"Ascendente: ";
+	for (i=0;i<5;i++){
+		cout<<numero[i]<<endl;
+	}
+	cout<<"Descendente: ";
+	for(i=4;i>=0;i--){
+		cout<<numero[i]<<endl;
+	}
+	getch();
+	return 0;
+}
+
+
+
+

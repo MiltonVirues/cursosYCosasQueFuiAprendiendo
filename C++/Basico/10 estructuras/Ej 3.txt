@@ -1,0 +1,42 @@
+/* Hacer un programa que lea un arreglo de estructuras los datos de n empleados de la empresa y que imprima los datos del empleado cpn mayor y menor salario. */
+
+#include<iostream>
+#include<conio.h>
+#include<string.h>
+using namespace std;
+struct empleado{
+char nombre[20];
+float salario;
+}emp[100];
+int main(){
+int n_empleados,posma=0,posme=0;
+float mayor=0,menor=999999;
+cout<<"Digite el numero de empleados: ",cin>>n_empleados;
+for(int i=0;i<n_empleados;i++){
+	fflush(stdin);
+cout<<i+1<<". Digite su nombre: \n";cin.getline(emp[i].nombre,20,'\n');
+cout<<i+1<<". Digite su salario: \n";cin>>emp[i].salario;
+//Determinando al empleado de mayor salario
+if(emp[i].salario>mayor){
+	mayor=emp[i].salario;
+	posma=i;
+}
+//Determinandoal empleado de menor  salario
+if(emp[i].salario<menor){
+	menor=emp[i].salario;
+	posme=i;
+}
+
+
+cout<<"\n";
+}
+cout<<"_Mayor salario_";
+cout<<"Nombre: "<<emp[posma].nombre;
+cout<<"\nSalario: "<<emp[posma].salario;
+cout<<"\n_Menor Salario_";
+cout<<"Nombre: "<<emp[posme].nombre;
+cout<<"\nSalario: "<<emp[posme].salario;
+
+getch();
+return 0;
+}

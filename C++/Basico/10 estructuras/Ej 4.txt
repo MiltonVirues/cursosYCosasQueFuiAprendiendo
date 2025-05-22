@@ -1,0 +1,35 @@
+/* Hacer un programa que lea un arreglo de estructura llamada atleta para N atletas  que contenga los siguiente campos:
+nombre, pais,numero_medallas. 
+y devuelva los datos(Nombre,pais) del atleta que ha ganado el mayor numero de medallas. */
+
+#include<iostream>
+#include<conio.h >
+using namespace std;
+struct atleta{
+	char nombre[20];
+	char pais[20];
+	int numero_medallas;
+}atle[100];
+int main(){
+	int atletas,mayor=0,pos;
+	
+	cout<<"Digite el numero de atletas: ";cin>>atletas;
+	for(int i=0;i<atletas;i++){
+		fflush(stdin);
+		cout<<i+1<<". Nombre: ";cin.getline(atle[i].nombre,20,'\n');
+		cout<<i+1<<". Pais: ";cin.getline(atle[i].pais,20,'\n');
+		cout<<i+1<<". Numero De Medallas: ";cin>>atle[i].numero_medallas;
+		cout<<"\n";
+		if(atle[i].numero_medallas>mayor){
+			mayor=atle[i].numero_medallas;
+			pos=i;
+		}
+		
+	}
+cout<<"Imprimiendo los datos del mejor atleta"<<endl;
+cout<<"Nombre: "<<atle[pos].nombre<<endl;
+cout<<"Pais: "<<atle[pos].pais<<endl;
+cout<<"Cantida de medallas: "<<atle[pos].numero_medallas<<endl;
+getch();
+return 0;
+}

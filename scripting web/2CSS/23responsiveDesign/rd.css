@@ -1,0 +1,36 @@
+/*
+tenemos 2 tipso de metodoligias:
+_MOBILE_FIRST  la idea de esta metodologia es primero programar y diseñar una pagina WEB para dispositivos moviles y despúes ir adaptando a resoluciones mayores
+_DESKTOP_FIRST  la idea de esta metodologia es programar y diseñar una pagina web para PC y despues ir adaptando las dimesiones a dispositivos moviles
+_CONTENT_FIRST la idea de esta metodologia es programar y diseñar el layout y lo que este tenga se estructura tanto como para pc o como para mobile
+*/
+*{
+font-family: 'Space Grotesk', sans-serif;  
+font-weight: 100;
+}
+
+.div-responsive{
+  background: #c95;
+}
+
+
+@media screen and (min-width:400px) AND (max-width:650px){
+  .div-responsive{
+    background: #f00;
+  }
+} 
+@media screen and (min-width:650px) AND (max-width:800px){
+  .div-responsive{
+    background: #0f0;
+  }
+} 
+@media screen and (min-width:800px) AND (max-width:1200px){
+  .div-responsive{
+    background: #00f;
+  }
+} 
+@media screen and (min-width:1200px){
+  .div-responsive{
+    background: #000;
+  }
+} 

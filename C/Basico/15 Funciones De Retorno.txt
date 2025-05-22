@@ -1,0 +1,22 @@
+/*
+Funciones de retorno en C
+*/
+#include<stdio.h>
+int suma();
+int main()
+{
+	int num,num2;
+	printf("Ingresa el primer valor\n");
+	scanf("%i",&num);
+		printf("Ingresa el segundo valor\n");
+	scanf("%i",&num2);
+	printf("%i\n",suma(num,num2)); 
+printf("El resultado es: %i\n",suma());
+return 0;
+}
+int suma(int num,int num2)
+{
+int suma=num+num2;
+return suma;
+}
+//si la funcion empieza con "void" no va a retornar ningun valor

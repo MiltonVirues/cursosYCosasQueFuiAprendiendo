@@ -1,0 +1,30 @@
+//Cadenas de caracteres
+#include<iostream>
+#include<conio.h>
+#include<string.h>
+using namespace std;
+int main(){
+	//Ejemplos de como rellenar una cadena
+	char palabra[]= "Milton";
+	char palabra2[]={'M','i','l','t','o','n'};
+	//ej
+	char nombre[30];
+	cout<<"Digite su nombre: ";cin>>nombre;
+	cout<<"Tu nombre es: "<<nombre<<endl;
+	//no es recomendable guardar una cadena en "cin" porque al minimo espacio este finaliza la cadena.
+	//Ej2
+	cout<<"Digite su nombre: ";gets(nombre);
+	cout<<"Tu nombre es: "<<nombre<<endl;
+	//Esta podria ser una solucion viable pero el problema de "Gets" es que no respeta la cadena especificada por el usuario y toma espacios de memoria que no le pertenece
+	//Ej3
+	cout<<"Digite su nombre: ";
+	cin.getline(nombre/*nombre de la cadena*/,20 /*valor dado */,'\n'/*como queres q termine */);
+	//Esta es la opcion mas completa y viable ya que respeta el espacio de cadenas dado, y tambien tiene en cuenta los espacios
+	 
+	
+	cout<<palabra<<endl;
+	cout<<palabra2<<endl;
+	
+	getch();
+	return 0;
+}

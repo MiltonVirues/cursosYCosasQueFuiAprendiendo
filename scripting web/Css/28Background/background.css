@@ -1,0 +1,27 @@
+*{
+  font-family: 'Space Grotesk', sans-serif;
+}
+div{
+  padding: 20px 5px;
+width: 360px;
+height: 360px;
+margin: 40px;
+/*
+background-image: url(https://www.xtrafondos.com/descargar.php?id=3041&resolucion=2560x1440);
+background-size: 100% 360px;(X Y)
+background-repeat: no-repeat;
+background-origin: border-box;
+*/
+}
+
+/*
+variables
+*/
+:root{/*aqui asignan las variables*/
+  --color-rojo:#f00;
+  --color-azul:#00f;
+}
+.container{
+--color-rojo:#0f0;/*tambien se puede redefinir su valor, pero solo afecta dentro del bloque de un elemento donde este se encuentra*/
+  background: var(--color-azul);/*para poder utilizar nuestras variables se utiliza "var()"*/
+}

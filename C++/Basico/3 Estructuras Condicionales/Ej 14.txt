@@ -1,0 +1,35 @@
+/* Hacer un menu que considere las siguientes opciones:
+caso 1: cubo de un numero
+caso 2: numero par o impar
+caso 3: salir
+*/
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main(){
+	int numero,opc,cubo=0;
+	cout<<"\t .::Menu::. \t";
+	cout<<"\n1. Cubo de un numero";
+	cout<<"\n2. Nuro Par o Impar";
+    cout<<"\n3. Salir";
+    cout<<"Opcion: ";cin>>opc;
+    switch(opc){
+    	case 1:
+    		cout<<"\nDigite un numero: ";cin>>numero;
+			cubo = pow(numero,3);
+			cout<<"\nEl elevado al cubo de el numero digitado es: "<<cubo;
+			break;
+			case 2: 
+			cout<<"\nDigite un numero: ";cin>>numero;
+			if(numero%2==0){
+				cout<<"El Numero es par";
+			}
+		else{
+			cout<<"El numero es impar";
+		}
+		break;
+		case 3:
+			cout<<"Vuelva Pronto :D"; break;		
+	}
+return 0;
+}
